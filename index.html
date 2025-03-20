@@ -1,26 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Tsinda Rihanna</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body bgcolor="pink">
+<body>
+    <header>
+        <nav class="navigation">
+            <img src="images/mon.jpg" alt="Photo de profil" class="profile-pic">
+            <div class="nom">
+                <h1>Tsinda Rihanna</h1>
+                <p>Développeur d'application web</p>
+            </div>
+            <ul>
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#gallery">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h3>Projet du cours de git b1</h3>
-    <p>Liste des participants</p>
-    <ul style="color: brown;">
-        <li>Nicolas</li>
-        <li>Julien</li>
-        <li>Maxime</li>
-        <li>Yann</li>
-        <li>BOdy</li>
-    </ul>
-    <img src="2.jpg" alt="lolo">
-    <img class="image" src="./image2.jpg" alt="image de travail">
-    <
+    <section id="propos" class="propos">
+        <div class="carte">
+            <h2>À propos de moi</h2>
+            <p>Je suis un développeur passionné de création d'applications web modernes, interactives et performantes.
+            </p>
+        </div>
+    </section>
+
+    <section id="competences" class="competences">
+        <h1>Compétences</h1>
+        <div class="skill">
+            <h2>Front-end</h2>
+            <p>HTML5, CSS3, JavaScript, ReactJS, VueJS</p>
+        </div>
+        <div class="skill">
+            <h2>Back-end</h2>
+            <p>Node.js, Express, MongoDB, PostgreSQL</p>
+        </div>
+        <div class="skill">
+            <h2>Outils</h2>
+            <p>Git, GitHub, Docker, Webpack</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Mes Projets PERSONNEL</h2>
+        <br>
+        <br>
+        <h4>en dehors de develloper je fait de la musique et je participe a des competitions
+            comme THE WEST VOICE MUSIC <br>
+            <br>
+            <br>
+            <br>
+            cliquer sur le lien facebook pour suivre mes Posts
+        </h4>
+        <div class="image-container">
+            <div id="fb-root"></div>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="XYZ">
+                </script>
+
+            <div class="fb-follow" data-href="https://www.facebook.com/candidate/tsindarihanna/roosveltchroniquehebdo"
+                data-layout="standard" data-size="small">
+            </div> <br>
+            <br>
+            <br>
+
+            <a href="https://www.facebook.com/tsinda rihanna roosvelt chronique hebdo" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" width="90">
+                <br>
+
+
+
+            </a>
+            <div class="fb-page" data-href="https://www.facebook.com/aldruine/rihanna" data-tabs="timeline"
+                data-width="340" data-height="500" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3>Contactez-moi</h3>
+        <form action="#" id="form">
+            <label for="name">Nom</label>
+            <input type="text" id="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <img src="images/mon.jpg" alt="Photo de profil" class="profile-pic">
+        <p>Tsinda Rihanna</p>
+        <a href="mailto:tsindarihanna@gmail.com">tsindarihanna@gmail.com</a>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

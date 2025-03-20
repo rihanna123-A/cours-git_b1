@@ -1,0 +1,150 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ body {
+     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+     color: white;
+     scroll-behavior: smooth;
+ }
+
+
+ .navigation {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: rgba(0, 0, 0, 0.8);
+     padding: 15px;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1000;
+ }
+
+ .navigation .profile-pic {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+ }
+
+ .nom {
+     margin-left: 10px;
+ }
+
+ .navigation ul {
+     list-style: none;
+     display: flex;
+ }
+
+ .navigation ul li {
+     margin-left: 20px;
+ }
+
+ .navigation ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     transition: color 0.3s ease-in-out;
+ }
+
+ .navigation ul li a:hover {
+     color: #f1c40f;
+ }
+
+ /* Sections */
+ .propos,
+ .competences,
+ .gallery,
+ .contact {
+     padding: 80px 20px;
+     text-align: center;
+     margin-top: 60px;
+ }
+
+
+ .gallery .image-container {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     flex-wrap: wrap;
+ }
+
+ .gallery a {
+     text-decoration: none;
+ }
+
+ .gallery img {
+     width: 180px;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 8px;
+     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+
+ .gallery img:hover {
+     transform: scale(1.1);
+     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+ }
+
+
+ .contact form {
+     display: flex;
+     flex-direction: column;
+     width: 60%;
+     margin: auto;
+ }
+
+ .contact form label {
+     margin-top: 10px;
+     font-weight: bold;
+ }
+
+ .contact form input,
+ .contact form textarea {
+     padding: 10px;
+     margin-top: 5px;
+     border: 1px solid #f1c40f;
+     border-radius: 5px;
+     width: 100%;
+     background: rgba(255, 255, 255, 0.1);
+     color: white;
+ }
+
+ .contact form button {
+     margin-top: 10px;
+     padding: 10px;
+     background: #f1c40f;
+     color: black;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .contact form button:hover {
+     background: #e1b700;
+ }
+
+ footer {
+     background: rgba(0, 0, 0, 0.8);
+     text-align: center;
+     padding: 15px;
+ }
+
+ .image-container form button {
+     background-color: #f1c40f;
+ }
+
+ header img,
+ footer img {
+     max-width: 150px;
+     height: auto;
+ }
+
+ header img,
+ footer img {
+     width: 50px;
+     height: auto;
+ }
